@@ -1,0 +1,13 @@
+{
+    "name": "vendor/rifas",
+    "description": "Description of project rifas.",
+    "authors": [
+        {
+            "name": "packo",
+            "email": "packo6300@gmail.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "v3.1.33"
+    }
+}
