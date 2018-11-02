@@ -3,12 +3,7 @@ ini_set("memory_limit","-1");
 class IndexController extends Zend_Controller_Inax{
 
     public function init(){
-        if(empty($_SESSION['userInax'])){
-            $this->_redirect('/login');
-        }
-        if(COMPANY=='LIN'){
-           $this->_redirect('/errorFactura');
-        } 
+       $this->_helper->layout->setLayout('bootstrap');   
     }
     public function setClientsToFileAction() {
         $model= new Application_Model_InicioModel();
