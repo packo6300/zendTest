@@ -1,11 +1,9 @@
-<?php /* echo $this->doctype(); */ $meses = array('January'    => 'Enero','February'  => 'Febrero','March'     => 'Marzo','April'     => 'Abril','May'       => 'Mayo','June'      => 'Junio','July'      => 'Julio','August'    => 'Agosto','September' => 'Septiembre','October'   => 'Octubre','November'  => 'Noviembre','December'  => 'Diciembre',); date_default_timezone_set('America/Chihuahua'); $fecha = new DateTime(); $mes   = $fecha->format('F'); $fecha = $meses[$mes].'/'.$fecha->format('Y'); $fecha = new DateTime(); $mes   = $fecha->format('F'); $fecha = $meses[$mes].'/'.$fecha->format('Y');
-if ( isset($_SESSION['userInax']) ){$user = $_SESSION['userInax'];$visible = 'none'; if ($user === 'sistemas07' || $user === 'ventascat21'|| $user === 'sistemas10' || $user === 'sistemas' || $user == 'supervisor.cat'){ $visible = 'block';} } ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta charset="UTF-8" />
-	<title><?= VERSION ?> - <?php echo $_SESSION['company_name']; ?></title>
+	<title><?= VERSION ?> - </title>
         <link href="../application/assets/img/logo_inax.png" rel="icon" />
         <link href="../application/assets/css/font-google.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="../application/assets/css/buttons/css/buttons.dataTables.css" media="screen" rel="stylesheet" type="text/css" />
@@ -214,7 +212,6 @@ if ( isset($_SESSION['userInax']) ){$user = $_SESSION['userInax'];$visible = 'no
         <script type="text/javascript" src="../application/assets/js/buttons/js/buttons.html5.js"></script>
         <script type="text/javascript" src="../application/assets/js/JsBarcode128.js"></script>
         <script type="text/javascript" src="../application/assets/js/jquery.filtertable.js"></script>
-        <script type="text/javascript" src="../application/assets/js/avance.js?v=10Thu"></script>
         <script type="text/javascript" src="../application/assets/js/jszip.js"></script>
         <script type="text/javascript" src="../application/assets/js/colResizable-1.6.js"></script>
         <script type="text/javascript" src="../application/assets/js/select2.js"></script>

@@ -208,14 +208,6 @@ abstract class Zend_Db_Adapter_Abstract
             }
         }
 
-        if (!isset($config['charset'])) {
-            $config['charset'] = 'UTF-8';
-        }
-
-        if (!isset($config['platform'])) {
-            $config['platform'] = 'SqlServer';
-        }
-
         if (!isset($config['persistent'])) {
             $config['persistent'] = false;
         }

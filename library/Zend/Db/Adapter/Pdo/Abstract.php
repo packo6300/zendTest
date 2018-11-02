@@ -99,12 +99,6 @@ abstract class Zend_Db_Adapter_Pdo_Abstract extends Zend_Db_Adapter_Abstract
 
         // get the dsn first, because some adapters alter the $_pdoType
         $dsn = $this->_dsn();
-        $arr=PDO::getAvailableDrivers();
-        foreach ($arr as $key => $value) {
-            if($value=='sqlsrv'){
-                $dsn = 'sqlsrv:Server=SQL03\DB03;Database=AXTEST;';
-            }
-        }
         // check for PDO extension
         if (!extension_loaded('pdo')) {
             /**
