@@ -1,8 +1,10 @@
 <?php
 
-class ErrorController extends Zend_Controller_Action
+class ErrorController extends Zend_Controller_Json
 {
-
+    public function init(){
+       $this->_helper->layout->setLayout('error');  
+    }
     public function errorAction()
     {
         $errors = $this->_getParam('error_handler');

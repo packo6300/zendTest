@@ -8,8 +8,8 @@
   * o produccion en el archivo application.ini
  * @author Francisco Delgado <packo6300@gmail.com>
  */
-
-define("VERSION", "inAX Versión: 2.3");
-define('WEB_SERVICE_URL', 'http://' . CONFIG . '/MicrosoftDynamicsAXAif60/STFSalesOrderWebService/xppservice.svc?wsdl');
+define("PROJECT_TITLE","Interactua | Dashboard");
+define("VERSION", "Interactua: 2.3");
+define('WEB_SERVICE_URL', 'http://' . CONFIG . '/xppservice.wsdl');
 define('PERIODO_DE_VENTA',1);
 define("MESSAGE","VERSION DE ".ACTUAL." (LAS DATOS GENERADOS AQUÍ NO SON VALIDOS) FAVOR DE HACER OBSERVACIONES A DEPARTAMENTO DE DESARROLLO ");
